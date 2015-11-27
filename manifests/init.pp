@@ -4,8 +4,5 @@ class profile::jira {
     distribution => 'jre',
   }
 
-  class { 'jira':
-    javahome    => '/opt/java',
-  }
-
+  class { 'jira::facts': }
 }
