@@ -4,5 +4,6 @@ class profile::jira {
     distribution => 'jre',
   }
 
+  class { 'jira':}
   class { 'jira::facts': }
 }
