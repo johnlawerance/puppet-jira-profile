@@ -8,7 +8,7 @@ class profile::jira {
     user     => 'jira',
     password => "$mysql_jira_pass",
     dbname   => 'jira',
-    host     => ${fqdn},
+    host     => $fqdn,
     grant    => ['SELECT', 'UPDATE'],
     tag      => jira,
    }
